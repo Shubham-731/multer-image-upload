@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Upload file</title>
+  </head>
+  <body>
+    <div class="container w-3/4 m-auto">
+      <h2 class="text-3xl my-3">Upload Image here</h2>
+      <form
+        class="flex items-center space-x-6 mb-2"
+        action="/upload"
+        method="post"
+        enctype="multipart/form-data"
+      >
+        <input
+          type="file"
+          name="myFile"
+          class="block w-full text-sm text-slate-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-violet-50 file:text-violet-700 hover:file:bg-violet-100"
+        />
+        <input
+          type="submit"
+          value="Submit"
+          class="cursor-pointer font-semibold text-violet-700 bg-slate-100 py-2 px-4 rounded-full hover:bg-slate-200"
+        />
+      </form>
+      <hr />
+      <p class="text-blue-300 my-2"
+        ><%= typeof msg != 'undefined' ? msg : '' %></strong
+      >
+      <br />
+
+      <img src="<%= typeof file != 'undefined' ? file : '' %>" alt="" class="my-3">
+    </div>
+  </body>
+</html>
