@@ -1,14 +1,14 @@
 {
   "name": "multer-upload-file",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "version": "1.0.1",
+  "description": "This is the tutorial about how files are uploaded on the server/locally using multer.",
+  "main": "app.js",
   "scripts": {
     "start": "node app.js",
     "dev": "nodemon app.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Shubham",
   "license": "ISC",
   "dependencies": {
     "ejs": "^3.1.6",
